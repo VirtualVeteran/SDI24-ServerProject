@@ -5,7 +5,6 @@ const server = http.createServer((request, response) => {
     if (url[1] === '' ) {
       if (request.method === 'GET') {
         response.end("Hello World");
-        console.log("Server is running on ${CltAltDefeat}:${3000}")
       }
     }
     response.statusCode = 404;
@@ -13,6 +12,6 @@ const server = http.createServer((request, response) => {
   });
 
 
-  server.listen(3000, "CltAltDefeat", () => {
+  server.listen(3000, "localhost", () => {
     console.log(`Server running at http://localhost:3000/`);
   });
